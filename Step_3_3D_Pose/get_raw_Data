@@ -1,0 +1,20 @@
+close all
+clear
+clc
+
+videoDir='/home/id12253/Documents/MATLAB/ForPapers/Data/pod1/';
+
+% location of mat file with coordinates of all markers
+saveNameLeftL=fullfile(videoDir,sprintf('dotCoords_%s%s','left','L'));
+saveNameLeftR=fullfile(videoDir,sprintf('dotCoords_%s%s','left','R'));
+saveNameRightL=fullfile(videoDir,sprintf('dotCoords_%s%s','right','L'));
+saveNameRightR=fullfile(videoDir,sprintf('dotCoords_%s%s','right','R'));
+
+% load in as a struct
+coordsLeftL=load(saveNameLeftL); % left eye, left camera
+coordsLeftR=load(saveNameLeftR); % left eye, right camera
+coordsRightL=load(saveNameRightL); % left eye, left camera
+coordsRightR=load(saveNameRightR); % left eye, right camera
+
+
+
